@@ -1,6 +1,6 @@
 # Merge
 
-### Rebase로 merge하기
+### 1. Rebase로 merge하기
 
 > master 브랜치에 feature 브랜치를 병합하는 상황
 
@@ -14,3 +14,9 @@ merge commit이 발생하는 three-way merge가 싫다면 rebase를 통해 fast-
 3. `git checkout master` 를 통해 다시 돌아온다.
 
 4. `git merge feature` 를 통해 merge 한다.
+
+### 2. Cherry pick
+
+> feature 브랜치에서 작업 중 하나의 커밋 만 master 브랜치로 merge 하고 싶은 경우
+
+1. master 브랜치에서 `git cherry-pick <해당 커밋 해시코드>` 를 통해 커밋을 가져올 수 있다.
