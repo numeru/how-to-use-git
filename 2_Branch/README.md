@@ -31,3 +31,12 @@ git checkout -b newbranch // 생성과 동시에 이동
 ### 6. git branch --move <기존 브랜치 이름> <바꿀 브랜치 이름>
 
 브랜치의 이름을 변경한다.
+
+### 7. git merge <브랜치 이름>
+
+현재 브랜지에 명시한 브랜치를 병합한다.
+현재 브랜치에 추가적인 커밋이 없다면 fast-forward merge를, 있다면 three-way merge를 한다.
+
+```
+git merge --no-ff <브랜치 이름> // fast forward merge를 하지 않고, merge 했다는 기록을 남긴다.
+```
