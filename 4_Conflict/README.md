@@ -26,7 +26,7 @@
 
 3. 파일을 저장하고 종료한다.
 
-4. `git merge --continue` 를 통해 다시 merge 한다.
+4. `git merge --continue` 를 통해 다시 merge 한다. (`git pull --rebase`에서 충돌이 발생했다면 `git rebase --continue`)
 
 ```
 orig 파일이 생겼을 경우
